@@ -1,0 +1,1514 @@
+//@import url("https://fonts.googleapis.com/css?family=Lobster")
+//
+//*
+//  margin: 0
+//  padding: 0
+//  box-sizing: border-box
+//
+//h1
+//  color: #fff
+//  font-family: "Lobster", cursive
+//  font-size: 5em
+//  text-align: center
+//  line-height: 100vh
+//  z-index: 2
+//  position: relative
+//
+//body
+//  background: #111
+//  overflow: hidden
+//
+.water
+  position: absolute
+  width: 100%
+  height: 1px
+  bottom: -2px
+  left: -4px
+
+.line
+  background: #46a1de
+  width: 4px
+  height: 1px
+  float: left
+  animation: wave 1s infinite ease-in-out alternate
+  z-index: 1
+  position: absolute
+  &:nth-child(1)
+    animation-delay: 0.002s
+    left: 4px
+  &:nth-child(2)
+    animation-delay: 0.004s
+    left: 8px
+  &:nth-child(3)
+    animation-delay: 0.006s
+    left: 12px
+  &:nth-child(4)
+    animation-delay: 0.008s
+    left: 16px
+  &:nth-child(5)
+    animation-delay: 0.01s
+    left: 20px
+  &:nth-child(6)
+    animation-delay: 0.012s
+    left: 24px
+  &:nth-child(7)
+    animation-delay: 0.014s
+    left: 28px
+  &:nth-child(8)
+    animation-delay: 0.016s
+    left: 32px
+  &:nth-child(9)
+    animation-delay: 0.018s
+    left: 36px
+  &:nth-child(10)
+    animation-delay: 0.02s
+    left: 40px
+  &:nth-child(11)
+    animation-delay: 0.022s
+    left: 44px
+  &:nth-child(12)
+    animation-delay: 0.024s
+    left: 48px
+  &:nth-child(13)
+    animation-delay: 0.026s
+    left: 52px
+  &:nth-child(14)
+    animation-delay: 0.028s
+    left: 56px
+  &:nth-child(15)
+    animation-delay: 0.03s
+    left: 60px
+  &:nth-child(16)
+    animation-delay: 0.032s
+    left: 64px
+  &:nth-child(17)
+    animation-delay: 0.034s
+    left: 68px
+  &:nth-child(18)
+    animation-delay: 0.036s
+    left: 72px
+  &:nth-child(19)
+    animation-delay: 0.038s
+    left: 76px
+  &:nth-child(20)
+    animation-delay: 0.04s
+    left: 80px
+  &:nth-child(21)
+    animation-delay: 0.042s
+    left: 84px
+  &:nth-child(22)
+    animation-delay: 0.044s
+    left: 88px
+  &:nth-child(23)
+    animation-delay: 0.046s
+    left: 92px
+  &:nth-child(24)
+    animation-delay: 0.048s
+    left: 96px
+  &:nth-child(25)
+    animation-delay: 0.05s
+    left: 100px
+  &:nth-child(26)
+    animation-delay: 0.052s
+    left: 104px
+  &:nth-child(27)
+    animation-delay: 0.054s
+    left: 108px
+  &:nth-child(28)
+    animation-delay: 0.056s
+    left: 112px
+  &:nth-child(29)
+    animation-delay: 0.058s
+    left: 116px
+  &:nth-child(30)
+    animation-delay: 0.06s
+    left: 120px
+  &:nth-child(31)
+    animation-delay: 0.062s
+    left: 124px
+  &:nth-child(32)
+    animation-delay: 0.064s
+    left: 128px
+  &:nth-child(33)
+    animation-delay: 0.066s
+    left: 132px
+  &:nth-child(34)
+    animation-delay: 0.068s
+    left: 136px
+  &:nth-child(35)
+    animation-delay: 0.07s
+    left: 140px
+  &:nth-child(36)
+    animation-delay: 0.072s
+    left: 144px
+  &:nth-child(37)
+    animation-delay: 0.074s
+    left: 148px
+  &:nth-child(38)
+    animation-delay: 0.076s
+    left: 152px
+  &:nth-child(39)
+    animation-delay: 0.078s
+    left: 156px
+  &:nth-child(40)
+    animation-delay: 0.08s
+    left: 160px
+  &:nth-child(41)
+    animation-delay: 0.082s
+    left: 164px
+  &:nth-child(42)
+    animation-delay: 0.084s
+    left: 168px
+  &:nth-child(43)
+    animation-delay: 0.086s
+    left: 172px
+  &:nth-child(44)
+    animation-delay: 0.088s
+    left: 176px
+  &:nth-child(45)
+    animation-delay: 0.09s
+    left: 180px
+  &:nth-child(46)
+    animation-delay: 0.092s
+    left: 184px
+  &:nth-child(47)
+    animation-delay: 0.094s
+    left: 188px
+  &:nth-child(48)
+    animation-delay: 0.096s
+    left: 192px
+  &:nth-child(49)
+    animation-delay: 0.098s
+    left: 196px
+  &:nth-child(50)
+    animation-delay: 0.1s
+    left: 200px
+  &:nth-child(51)
+    animation-delay: 0.102s
+    left: 204px
+  &:nth-child(52)
+    animation-delay: 0.104s
+    left: 208px
+  &:nth-child(53)
+    animation-delay: 0.106s
+    left: 212px
+  &:nth-child(54)
+    animation-delay: 0.108s
+    left: 216px
+  &:nth-child(55)
+    animation-delay: 0.11s
+    left: 220px
+  &:nth-child(56)
+    animation-delay: 0.112s
+    left: 224px
+  &:nth-child(57)
+    animation-delay: 0.114s
+    left: 228px
+  &:nth-child(58)
+    animation-delay: 0.116s
+    left: 232px
+  &:nth-child(59)
+    animation-delay: 0.118s
+    left: 236px
+  &:nth-child(60)
+    animation-delay: 0.12s
+    left: 240px
+  &:nth-child(61)
+    animation-delay: 0.122s
+    left: 244px
+  &:nth-child(62)
+    animation-delay: 0.124s
+    left: 248px
+  &:nth-child(63)
+    animation-delay: 0.126s
+    left: 252px
+  &:nth-child(64)
+    animation-delay: 0.128s
+    left: 256px
+  &:nth-child(65)
+    animation-delay: 0.13s
+    left: 260px
+  &:nth-child(66)
+    animation-delay: 0.132s
+    left: 264px
+  &:nth-child(67)
+    animation-delay: 0.134s
+    left: 268px
+  &:nth-child(68)
+    animation-delay: 0.136s
+    left: 272px
+  &:nth-child(69)
+    animation-delay: 0.138s
+    left: 276px
+  &:nth-child(70)
+    animation-delay: 0.14s
+    left: 280px
+  &:nth-child(71)
+    animation-delay: 0.142s
+    left: 284px
+  &:nth-child(72)
+    animation-delay: 0.144s
+    left: 288px
+  &:nth-child(73)
+    animation-delay: 0.146s
+    left: 292px
+  &:nth-child(74)
+    animation-delay: 0.148s
+    left: 296px
+  &:nth-child(75)
+    animation-delay: 0.15s
+    left: 300px
+  &:nth-child(76)
+    animation-delay: 0.152s
+    left: 304px
+  &:nth-child(77)
+    animation-delay: 0.154s
+    left: 308px
+  &:nth-child(78)
+    animation-delay: 0.156s
+    left: 312px
+  &:nth-child(79)
+    animation-delay: 0.158s
+    left: 316px
+  &:nth-child(80)
+    animation-delay: 0.16s
+    left: 320px
+  &:nth-child(81)
+    animation-delay: 0.162s
+    left: 324px
+  &:nth-child(82)
+    animation-delay: 0.164s
+    left: 328px
+  &:nth-child(83)
+    animation-delay: 0.166s
+    left: 332px
+  &:nth-child(84)
+    animation-delay: 0.168s
+    left: 336px
+  &:nth-child(85)
+    animation-delay: 0.17s
+    left: 340px
+  &:nth-child(86)
+    animation-delay: 0.172s
+    left: 344px
+  &:nth-child(87)
+    animation-delay: 0.174s
+    left: 348px
+  &:nth-child(88)
+    animation-delay: 0.176s
+    left: 352px
+  &:nth-child(89)
+    animation-delay: 0.178s
+    left: 356px
+  &:nth-child(90)
+    animation-delay: 0.18s
+    left: 360px
+  &:nth-child(91)
+    animation-delay: 0.182s
+    left: 364px
+  &:nth-child(92)
+    animation-delay: 0.184s
+    left: 368px
+  &:nth-child(93)
+    animation-delay: 0.186s
+    left: 372px
+  &:nth-child(94)
+    animation-delay: 0.188s
+    left: 376px
+  &:nth-child(95)
+    animation-delay: 0.19s
+    left: 380px
+  &:nth-child(96)
+    animation-delay: 0.192s
+    left: 384px
+  &:nth-child(97)
+    animation-delay: 0.194s
+    left: 388px
+  &:nth-child(98)
+    animation-delay: 0.196s
+    left: 392px
+  &:nth-child(99)
+    animation-delay: 0.198s
+    left: 396px
+  &:nth-child(100)
+    animation-delay: 0.2s
+    left: 400px
+  &:nth-child(101)
+    animation-delay: 0.202s
+    left: 404px
+  &:nth-child(102)
+    animation-delay: 0.204s
+    left: 408px
+  &:nth-child(103)
+    animation-delay: 0.206s
+    left: 412px
+  &:nth-child(104)
+    animation-delay: 0.208s
+    left: 416px
+  &:nth-child(105)
+    animation-delay: 0.21s
+    left: 420px
+  &:nth-child(106)
+    animation-delay: 0.212s
+    left: 424px
+  &:nth-child(107)
+    animation-delay: 0.214s
+    left: 428px
+  &:nth-child(108)
+    animation-delay: 0.216s
+    left: 432px
+  &:nth-child(109)
+    animation-delay: 0.218s
+    left: 436px
+  &:nth-child(110)
+    animation-delay: 0.22s
+    left: 440px
+  &:nth-child(111)
+    animation-delay: 0.222s
+    left: 444px
+  &:nth-child(112)
+    animation-delay: 0.224s
+    left: 448px
+  &:nth-child(113)
+    animation-delay: 0.226s
+    left: 452px
+  &:nth-child(114)
+    animation-delay: 0.228s
+    left: 456px
+  &:nth-child(115)
+    animation-delay: 0.23s
+    left: 460px
+  &:nth-child(116)
+    animation-delay: 0.232s
+    left: 464px
+  &:nth-child(117)
+    animation-delay: 0.234s
+    left: 468px
+  &:nth-child(118)
+    animation-delay: 0.236s
+    left: 472px
+  &:nth-child(119)
+    animation-delay: 0.238s
+    left: 476px
+  &:nth-child(120)
+    animation-delay: 0.24s
+    left: 480px
+  &:nth-child(121)
+    animation-delay: 0.242s
+    left: 484px
+  &:nth-child(122)
+    animation-delay: 0.244s
+    left: 488px
+  &:nth-child(123)
+    animation-delay: 0.246s
+    left: 492px
+  &:nth-child(124)
+    animation-delay: 0.248s
+    left: 496px
+  &:nth-child(125)
+    animation-delay: 0.25s
+    left: 500px
+  &:nth-child(126)
+    animation-delay: 0.252s
+    left: 504px
+  &:nth-child(127)
+    animation-delay: 0.254s
+    left: 508px
+  &:nth-child(128)
+    animation-delay: 0.256s
+    left: 512px
+  &:nth-child(129)
+    animation-delay: 0.258s
+    left: 516px
+  &:nth-child(130)
+    animation-delay: 0.26s
+    left: 520px
+  &:nth-child(131)
+    animation-delay: 0.262s
+    left: 524px
+  &:nth-child(132)
+    animation-delay: 0.264s
+    left: 528px
+  &:nth-child(133)
+    animation-delay: 0.266s
+    left: 532px
+  &:nth-child(134)
+    animation-delay: 0.268s
+    left: 536px
+  &:nth-child(135)
+    animation-delay: 0.27s
+    left: 540px
+  &:nth-child(136)
+    animation-delay: 0.272s
+    left: 544px
+  &:nth-child(137)
+    animation-delay: 0.274s
+    left: 548px
+  &:nth-child(138)
+    animation-delay: 0.276s
+    left: 552px
+  &:nth-child(139)
+    animation-delay: 0.278s
+    left: 556px
+  &:nth-child(140)
+    animation-delay: 0.28s
+    left: 560px
+  &:nth-child(141)
+    animation-delay: 0.282s
+    left: 564px
+  &:nth-child(142)
+    animation-delay: 0.284s
+    left: 568px
+  &:nth-child(143)
+    animation-delay: 0.286s
+    left: 572px
+  &:nth-child(144)
+    animation-delay: 0.288s
+    left: 576px
+  &:nth-child(145)
+    animation-delay: 0.29s
+    left: 580px
+  &:nth-child(146)
+    animation-delay: 0.292s
+    left: 584px
+  &:nth-child(147)
+    animation-delay: 0.294s
+    left: 588px
+  &:nth-child(148)
+    animation-delay: 0.296s
+    left: 592px
+  &:nth-child(149)
+    animation-delay: 0.298s
+    left: 596px
+  &:nth-child(150)
+    animation-delay: 0.3s
+    left: 600px
+  &:nth-child(151)
+    animation-delay: 0.302s
+    left: 604px
+  &:nth-child(152)
+    animation-delay: 0.304s
+    left: 608px
+  &:nth-child(153)
+    animation-delay: 0.306s
+    left: 612px
+  &:nth-child(154)
+    animation-delay: 0.308s
+    left: 616px
+  &:nth-child(155)
+    animation-delay: 0.31s
+    left: 620px
+  &:nth-child(156)
+    animation-delay: 0.312s
+    left: 624px
+  &:nth-child(157)
+    animation-delay: 0.314s
+    left: 628px
+  &:nth-child(158)
+    animation-delay: 0.316s
+    left: 632px
+  &:nth-child(159)
+    animation-delay: 0.318s
+    left: 636px
+  &:nth-child(160)
+    animation-delay: 0.32s
+    left: 640px
+  &:nth-child(161)
+    animation-delay: 0.322s
+    left: 644px
+  &:nth-child(162)
+    animation-delay: 0.324s
+    left: 648px
+  &:nth-child(163)
+    animation-delay: 0.326s
+    left: 652px
+  &:nth-child(164)
+    animation-delay: 0.328s
+    left: 656px
+  &:nth-child(165)
+    animation-delay: 0.33s
+    left: 660px
+  &:nth-child(166)
+    animation-delay: 0.332s
+    left: 664px
+  &:nth-child(167)
+    animation-delay: 0.334s
+    left: 668px
+  &:nth-child(168)
+    animation-delay: 0.336s
+    left: 672px
+  &:nth-child(169)
+    animation-delay: 0.338s
+    left: 676px
+  &:nth-child(170)
+    animation-delay: 0.34s
+    left: 680px
+  &:nth-child(171)
+    animation-delay: 0.342s
+    left: 684px
+  &:nth-child(172)
+    animation-delay: 0.344s
+    left: 688px
+  &:nth-child(173)
+    animation-delay: 0.346s
+    left: 692px
+  &:nth-child(174)
+    animation-delay: 0.348s
+    left: 696px
+  &:nth-child(175)
+    animation-delay: 0.35s
+    left: 700px
+  &:nth-child(176)
+    animation-delay: 0.352s
+    left: 704px
+  &:nth-child(177)
+    animation-delay: 0.354s
+    left: 708px
+  &:nth-child(178)
+    animation-delay: 0.356s
+    left: 712px
+  &:nth-child(179)
+    animation-delay: 0.358s
+    left: 716px
+  &:nth-child(180)
+    animation-delay: 0.36s
+    left: 720px
+  &:nth-child(181)
+    animation-delay: 0.362s
+    left: 724px
+  &:nth-child(182)
+    animation-delay: 0.364s
+    left: 728px
+  &:nth-child(183)
+    animation-delay: 0.366s
+    left: 732px
+  &:nth-child(184)
+    animation-delay: 0.368s
+    left: 736px
+  &:nth-child(185)
+    animation-delay: 0.37s
+    left: 740px
+  &:nth-child(186)
+    animation-delay: 0.372s
+    left: 744px
+  &:nth-child(187)
+    animation-delay: 0.374s
+    left: 748px
+  &:nth-child(188)
+    animation-delay: 0.376s
+    left: 752px
+  &:nth-child(189)
+    animation-delay: 0.378s
+    left: 756px
+  &:nth-child(190)
+    animation-delay: 0.38s
+    left: 760px
+  &:nth-child(191)
+    animation-delay: 0.382s
+    left: 764px
+  &:nth-child(192)
+    animation-delay: 0.384s
+    left: 768px
+  &:nth-child(193)
+    animation-delay: 0.386s
+    left: 772px
+  &:nth-child(194)
+    animation-delay: 0.388s
+    left: 776px
+  &:nth-child(195)
+    animation-delay: 0.39s
+    left: 780px
+  &:nth-child(196)
+    animation-delay: 0.392s
+    left: 784px
+  &:nth-child(197)
+    animation-delay: 0.394s
+    left: 788px
+  &:nth-child(198)
+    animation-delay: 0.396s
+    left: 792px
+  &:nth-child(199)
+    animation-delay: 0.398s
+    left: 796px
+  &:nth-child(200)
+    animation-delay: 0.4s
+    left: 800px
+  &:nth-child(201)
+    animation-delay: 0.402s
+    left: 804px
+  &:nth-child(202)
+    animation-delay: 0.404s
+    left: 808px
+  &:nth-child(203)
+    animation-delay: 0.406s
+    left: 812px
+  &:nth-child(204)
+    animation-delay: 0.408s
+    left: 816px
+  &:nth-child(205)
+    animation-delay: 0.41s
+    left: 820px
+  &:nth-child(206)
+    animation-delay: 0.412s
+    left: 824px
+  &:nth-child(207)
+    animation-delay: 0.414s
+    left: 828px
+  &:nth-child(208)
+    animation-delay: 0.416s
+    left: 832px
+  &:nth-child(209)
+    animation-delay: 0.418s
+    left: 836px
+  &:nth-child(210)
+    animation-delay: 0.42s
+    left: 840px
+  &:nth-child(211)
+    animation-delay: 0.422s
+    left: 844px
+  &:nth-child(212)
+    animation-delay: 0.424s
+    left: 848px
+  &:nth-child(213)
+    animation-delay: 0.426s
+    left: 852px
+  &:nth-child(214)
+    animation-delay: 0.428s
+    left: 856px
+  &:nth-child(215)
+    animation-delay: 0.43s
+    left: 860px
+  &:nth-child(216)
+    animation-delay: 0.432s
+    left: 864px
+  &:nth-child(217)
+    animation-delay: 0.434s
+    left: 868px
+  &:nth-child(218)
+    animation-delay: 0.436s
+    left: 872px
+  &:nth-child(219)
+    animation-delay: 0.438s
+    left: 876px
+  &:nth-child(220)
+    animation-delay: 0.44s
+    left: 880px
+  &:nth-child(221)
+    animation-delay: 0.442s
+    left: 884px
+  &:nth-child(222)
+    animation-delay: 0.444s
+    left: 888px
+  &:nth-child(223)
+    animation-delay: 0.446s
+    left: 892px
+  &:nth-child(224)
+    animation-delay: 0.448s
+    left: 896px
+  &:nth-child(225)
+    animation-delay: 0.45s
+    left: 900px
+  &:nth-child(226)
+    animation-delay: 0.452s
+    left: 904px
+  &:nth-child(227)
+    animation-delay: 0.454s
+    left: 908px
+  &:nth-child(228)
+    animation-delay: 0.456s
+    left: 912px
+  &:nth-child(229)
+    animation-delay: 0.458s
+    left: 916px
+  &:nth-child(230)
+    animation-delay: 0.46s
+    left: 920px
+  &:nth-child(231)
+    animation-delay: 0.462s
+    left: 924px
+  &:nth-child(232)
+    animation-delay: 0.464s
+    left: 928px
+  &:nth-child(233)
+    animation-delay: 0.466s
+    left: 932px
+  &:nth-child(234)
+    animation-delay: 0.468s
+    left: 936px
+  &:nth-child(235)
+    animation-delay: 0.47s
+    left: 940px
+  &:nth-child(236)
+    animation-delay: 0.472s
+    left: 944px
+  &:nth-child(237)
+    animation-delay: 0.474s
+    left: 948px
+  &:nth-child(238)
+    animation-delay: 0.476s
+    left: 952px
+  &:nth-child(239)
+    animation-delay: 0.478s
+    left: 956px
+  &:nth-child(240)
+    animation-delay: 0.48s
+    left: 960px
+  &:nth-child(241)
+    animation-delay: 0.482s
+    left: 964px
+  &:nth-child(242)
+    animation-delay: 0.484s
+    left: 968px
+  &:nth-child(243)
+    animation-delay: 0.486s
+    left: 972px
+  &:nth-child(244)
+    animation-delay: 0.488s
+    left: 976px
+  &:nth-child(245)
+    animation-delay: 0.49s
+    left: 980px
+  &:nth-child(246)
+    animation-delay: 0.492s
+    left: 984px
+  &:nth-child(247)
+    animation-delay: 0.494s
+    left: 988px
+  &:nth-child(248)
+    animation-delay: 0.496s
+    left: 992px
+  &:nth-child(249)
+    animation-delay: 0.498s
+    left: 996px
+  &:nth-child(250)
+    animation-delay: 0.5s
+    left: 1000px
+  &:nth-child(251)
+    animation-delay: 0.502s
+    left: 1004px
+  &:nth-child(252)
+    animation-delay: 0.504s
+    left: 1008px
+  &:nth-child(253)
+    animation-delay: 0.506s
+    left: 1012px
+  &:nth-child(254)
+    animation-delay: 0.508s
+    left: 1016px
+  &:nth-child(255)
+    animation-delay: 0.51s
+    left: 1020px
+  &:nth-child(256)
+    animation-delay: 0.512s
+    left: 1024px
+  &:nth-child(257)
+    animation-delay: 0.514s
+    left: 1028px
+  &:nth-child(258)
+    animation-delay: 0.516s
+    left: 1032px
+  &:nth-child(259)
+    animation-delay: 0.518s
+    left: 1036px
+  &:nth-child(260)
+    animation-delay: 0.52s
+    left: 1040px
+  &:nth-child(261)
+    animation-delay: 0.522s
+    left: 1044px
+  &:nth-child(262)
+    animation-delay: 0.524s
+    left: 1048px
+  &:nth-child(263)
+    animation-delay: 0.526s
+    left: 1052px
+  &:nth-child(264)
+    animation-delay: 0.528s
+    left: 1056px
+  &:nth-child(265)
+    animation-delay: 0.53s
+    left: 1060px
+  &:nth-child(266)
+    animation-delay: 0.532s
+    left: 1064px
+  &:nth-child(267)
+    animation-delay: 0.534s
+    left: 1068px
+  &:nth-child(268)
+    animation-delay: 0.536s
+    left: 1072px
+  &:nth-child(269)
+    animation-delay: 0.538s
+    left: 1076px
+  &:nth-child(270)
+    animation-delay: 0.54s
+    left: 1080px
+  &:nth-child(271)
+    animation-delay: 0.542s
+    left: 1084px
+  &:nth-child(272)
+    animation-delay: 0.544s
+    left: 1088px
+  &:nth-child(273)
+    animation-delay: 0.546s
+    left: 1092px
+  &:nth-child(274)
+    animation-delay: 0.548s
+    left: 1096px
+  &:nth-child(275)
+    animation-delay: 0.55s
+    left: 1100px
+  &:nth-child(276)
+    animation-delay: 0.552s
+    left: 1104px
+  &:nth-child(277)
+    animation-delay: 0.554s
+    left: 1108px
+  &:nth-child(278)
+    animation-delay: 0.556s
+    left: 1112px
+  &:nth-child(279)
+    animation-delay: 0.558s
+    left: 1116px
+  &:nth-child(280)
+    animation-delay: 0.56s
+    left: 1120px
+  &:nth-child(281)
+    animation-delay: 0.562s
+    left: 1124px
+  &:nth-child(282)
+    animation-delay: 0.564s
+    left: 1128px
+  &:nth-child(283)
+    animation-delay: 0.566s
+    left: 1132px
+  &:nth-child(284)
+    animation-delay: 0.568s
+    left: 1136px
+  &:nth-child(285)
+    animation-delay: 0.57s
+    left: 1140px
+  &:nth-child(286)
+    animation-delay: 0.572s
+    left: 1144px
+  &:nth-child(287)
+    animation-delay: 0.574s
+    left: 1148px
+  &:nth-child(288)
+    animation-delay: 0.576s
+    left: 1152px
+  &:nth-child(289)
+    animation-delay: 0.578s
+    left: 1156px
+  &:nth-child(290)
+    animation-delay: 0.58s
+    left: 1160px
+  &:nth-child(291)
+    animation-delay: 0.582s
+    left: 1164px
+  &:nth-child(292)
+    animation-delay: 0.584s
+    left: 1168px
+  &:nth-child(293)
+    animation-delay: 0.586s
+    left: 1172px
+  &:nth-child(294)
+    animation-delay: 0.588s
+    left: 1176px
+  &:nth-child(295)
+    animation-delay: 0.59s
+    left: 1180px
+  &:nth-child(296)
+    animation-delay: 0.592s
+    left: 1184px
+  &:nth-child(297)
+    animation-delay: 0.594s
+    left: 1188px
+  &:nth-child(298)
+    animation-delay: 0.596s
+    left: 1192px
+  &:nth-child(299)
+    animation-delay: 0.598s
+    left: 1196px
+  &:nth-child(300)
+    animation-delay: 0.6s
+    left: 1200px
+  &:nth-child(301)
+    animation-delay: 0.602s
+    left: 1204px
+  &:nth-child(302)
+    animation-delay: 0.604s
+    left: 1208px
+  &:nth-child(303)
+    animation-delay: 0.606s
+    left: 1212px
+  &:nth-child(304)
+    animation-delay: 0.608s
+    left: 1216px
+  &:nth-child(305)
+    animation-delay: 0.61s
+    left: 1220px
+  &:nth-child(306)
+    animation-delay: 0.612s
+    left: 1224px
+  &:nth-child(307)
+    animation-delay: 0.614s
+    left: 1228px
+  &:nth-child(308)
+    animation-delay: 0.616s
+    left: 1232px
+  &:nth-child(309)
+    animation-delay: 0.618s
+    left: 1236px
+  &:nth-child(310)
+    animation-delay: 0.62s
+    left: 1240px
+  &:nth-child(311)
+    animation-delay: 0.622s
+    left: 1244px
+  &:nth-child(312)
+    animation-delay: 0.624s
+    left: 1248px
+  &:nth-child(313)
+    animation-delay: 0.626s
+    left: 1252px
+  &:nth-child(314)
+    animation-delay: 0.628s
+    left: 1256px
+  &:nth-child(315)
+    animation-delay: 0.63s
+    left: 1260px
+  &:nth-child(316)
+    animation-delay: 0.632s
+    left: 1264px
+  &:nth-child(317)
+    animation-delay: 0.634s
+    left: 1268px
+  &:nth-child(318)
+    animation-delay: 0.636s
+    left: 1272px
+  &:nth-child(319)
+    animation-delay: 0.638s
+    left: 1276px
+  &:nth-child(320)
+    animation-delay: 0.64s
+    left: 1280px
+  &:nth-child(321)
+    animation-delay: 0.642s
+    left: 1284px
+  &:nth-child(322)
+    animation-delay: 0.644s
+    left: 1288px
+  &:nth-child(323)
+    animation-delay: 0.646s
+    left: 1292px
+  &:nth-child(324)
+    animation-delay: 0.648s
+    left: 1296px
+  &:nth-child(325)
+    animation-delay: 0.65s
+    left: 1300px
+  &:nth-child(326)
+    animation-delay: 0.652s
+    left: 1304px
+  &:nth-child(327)
+    animation-delay: 0.654s
+    left: 1308px
+  &:nth-child(328)
+    animation-delay: 0.656s
+    left: 1312px
+  &:nth-child(329)
+    animation-delay: 0.658s
+    left: 1316px
+  &:nth-child(330)
+    animation-delay: 0.66s
+    left: 1320px
+  &:nth-child(331)
+    animation-delay: 0.662s
+    left: 1324px
+  &:nth-child(332)
+    animation-delay: 0.664s
+    left: 1328px
+  &:nth-child(333)
+    animation-delay: 0.666s
+    left: 1332px
+  &:nth-child(334)
+    animation-delay: 0.668s
+    left: 1336px
+  &:nth-child(335)
+    animation-delay: 0.67s
+    left: 1340px
+  &:nth-child(336)
+    animation-delay: 0.672s
+    left: 1344px
+  &:nth-child(337)
+    animation-delay: 0.674s
+    left: 1348px
+  &:nth-child(338)
+    animation-delay: 0.676s
+    left: 1352px
+  &:nth-child(339)
+    animation-delay: 0.678s
+    left: 1356px
+  &:nth-child(340)
+    animation-delay: 0.68s
+    left: 1360px
+  &:nth-child(341)
+    animation-delay: 0.682s
+    left: 1364px
+  &:nth-child(342)
+    animation-delay: 0.684s
+    left: 1368px
+  &:nth-child(343)
+    animation-delay: 0.686s
+    left: 1372px
+  &:nth-child(344)
+    animation-delay: 0.688s
+    left: 1376px
+  &:nth-child(345)
+    animation-delay: 0.69s
+    left: 1380px
+  &:nth-child(346)
+    animation-delay: 0.692s
+    left: 1384px
+  &:nth-child(347)
+    animation-delay: 0.694s
+    left: 1388px
+  &:nth-child(348)
+    animation-delay: 0.696s
+    left: 1392px
+  &:nth-child(349)
+    animation-delay: 0.698s
+    left: 1396px
+  &:nth-child(350)
+    animation-delay: 0.7s
+    left: 1400px
+  &:nth-child(351)
+    animation-delay: 0.702s
+    left: 1404px
+  &:nth-child(352)
+    animation-delay: 0.704s
+    left: 1408px
+  &:nth-child(353)
+    animation-delay: 0.706s
+    left: 1412px
+  &:nth-child(354)
+    animation-delay: 0.708s
+    left: 1416px
+  &:nth-child(355)
+    animation-delay: 0.71s
+    left: 1420px
+  &:nth-child(356)
+    animation-delay: 0.712s
+    left: 1424px
+  &:nth-child(357)
+    animation-delay: 0.714s
+    left: 1428px
+  &:nth-child(358)
+    animation-delay: 0.716s
+    left: 1432px
+  &:nth-child(359)
+    animation-delay: 0.718s
+    left: 1436px
+  &:nth-child(360)
+    animation-delay: 0.72s
+    left: 1440px
+  &:nth-child(361)
+    animation-delay: 0.722s
+    left: 1444px
+  &:nth-child(362)
+    animation-delay: 0.724s
+    left: 1448px
+  &:nth-child(363)
+    animation-delay: 0.726s
+    left: 1452px
+  &:nth-child(364)
+    animation-delay: 0.728s
+    left: 1456px
+  &:nth-child(365)
+    animation-delay: 0.73s
+    left: 1460px
+  &:nth-child(366)
+    animation-delay: 0.732s
+    left: 1464px
+  &:nth-child(367)
+    animation-delay: 0.734s
+    left: 1468px
+  &:nth-child(368)
+    animation-delay: 0.736s
+    left: 1472px
+  &:nth-child(369)
+    animation-delay: 0.738s
+    left: 1476px
+  &:nth-child(370)
+    animation-delay: 0.74s
+    left: 1480px
+  &:nth-child(371)
+    animation-delay: 0.742s
+    left: 1484px
+  &:nth-child(372)
+    animation-delay: 0.744s
+    left: 1488px
+  &:nth-child(373)
+    animation-delay: 0.746s
+    left: 1492px
+  &:nth-child(374)
+    animation-delay: 0.748s
+    left: 1496px
+  &:nth-child(375)
+    animation-delay: 0.75s
+    left: 1500px
+  &:nth-child(376)
+    animation-delay: 0.752s
+    left: 1504px
+  &:nth-child(377)
+    animation-delay: 0.754s
+    left: 1508px
+  &:nth-child(378)
+    animation-delay: 0.756s
+    left: 1512px
+  &:nth-child(379)
+    animation-delay: 0.758s
+    left: 1516px
+  &:nth-child(380)
+    animation-delay: 0.76s
+    left: 1520px
+  &:nth-child(381)
+    animation-delay: 0.762s
+    left: 1524px
+  &:nth-child(382)
+    animation-delay: 0.764s
+    left: 1528px
+  &:nth-child(383)
+    animation-delay: 0.766s
+    left: 1532px
+  &:nth-child(384)
+    animation-delay: 0.768s
+    left: 1536px
+  &:nth-child(385)
+    animation-delay: 0.77s
+    left: 1540px
+  &:nth-child(386)
+    animation-delay: 0.772s
+    left: 1544px
+  &:nth-child(387)
+    animation-delay: 0.774s
+    left: 1548px
+  &:nth-child(388)
+    animation-delay: 0.776s
+    left: 1552px
+  &:nth-child(389)
+    animation-delay: 0.778s
+    left: 1556px
+  &:nth-child(390)
+    animation-delay: 0.78s
+    left: 1560px
+  &:nth-child(391)
+    animation-delay: 0.782s
+    left: 1564px
+  &:nth-child(392)
+    animation-delay: 0.784s
+    left: 1568px
+  &:nth-child(393)
+    animation-delay: 0.786s
+    left: 1572px
+  &:nth-child(394)
+    animation-delay: 0.788s
+    left: 1576px
+  &:nth-child(395)
+    animation-delay: 0.79s
+    left: 1580px
+  &:nth-child(396)
+    animation-delay: 0.792s
+    left: 1584px
+  &:nth-child(397)
+    animation-delay: 0.794s
+    left: 1588px
+  &:nth-child(398)
+    animation-delay: 0.796s
+    left: 1592px
+  &:nth-child(399)
+    animation-delay: 0.798s
+    left: 1596px
+  &:nth-child(400)
+    animation-delay: 0.8s
+    left: 1600px
+  &:nth-child(401)
+    animation-delay: 0.802s
+    left: 1604px
+  &:nth-child(402)
+    animation-delay: 0.804s
+    left: 1608px
+  &:nth-child(403)
+    animation-delay: 0.806s
+    left: 1612px
+  &:nth-child(404)
+    animation-delay: 0.808s
+    left: 1616px
+  &:nth-child(405)
+    animation-delay: 0.81s
+    left: 1620px
+  &:nth-child(406)
+    animation-delay: 0.812s
+    left: 1624px
+  &:nth-child(407)
+    animation-delay: 0.814s
+    left: 1628px
+  &:nth-child(408)
+    animation-delay: 0.816s
+    left: 1632px
+  &:nth-child(409)
+    animation-delay: 0.818s
+    left: 1636px
+  &:nth-child(410)
+    animation-delay: 0.82s
+    left: 1640px
+  &:nth-child(411)
+    animation-delay: 0.822s
+    left: 1644px
+  &:nth-child(412)
+    animation-delay: 0.824s
+    left: 1648px
+  &:nth-child(413)
+    animation-delay: 0.826s
+    left: 1652px
+  &:nth-child(414)
+    animation-delay: 0.828s
+    left: 1656px
+  &:nth-child(415)
+    animation-delay: 0.83s
+    left: 1660px
+  &:nth-child(416)
+    animation-delay: 0.832s
+    left: 1664px
+  &:nth-child(417)
+    animation-delay: 0.834s
+    left: 1668px
+  &:nth-child(418)
+    animation-delay: 0.836s
+    left: 1672px
+  &:nth-child(419)
+    animation-delay: 0.838s
+    left: 1676px
+  &:nth-child(420)
+    animation-delay: 0.84s
+    left: 1680px
+  &:nth-child(421)
+    animation-delay: 0.842s
+    left: 1684px
+  &:nth-child(422)
+    animation-delay: 0.844s
+    left: 1688px
+  &:nth-child(423)
+    animation-delay: 0.846s
+    left: 1692px
+  &:nth-child(424)
+    animation-delay: 0.848s
+    left: 1696px
+  &:nth-child(425)
+    animation-delay: 0.85s
+    left: 1700px
+  &:nth-child(426)
+    animation-delay: 0.852s
+    left: 1704px
+  &:nth-child(427)
+    animation-delay: 0.854s
+    left: 1708px
+  &:nth-child(428)
+    animation-delay: 0.856s
+    left: 1712px
+  &:nth-child(429)
+    animation-delay: 0.858s
+    left: 1716px
+  &:nth-child(430)
+    animation-delay: 0.86s
+    left: 1720px
+  &:nth-child(431)
+    animation-delay: 0.862s
+    left: 1724px
+  &:nth-child(432)
+    animation-delay: 0.864s
+    left: 1728px
+  &:nth-child(433)
+    animation-delay: 0.866s
+    left: 1732px
+  &:nth-child(434)
+    animation-delay: 0.868s
+    left: 1736px
+  &:nth-child(435)
+    animation-delay: 0.87s
+    left: 1740px
+  &:nth-child(436)
+    animation-delay: 0.872s
+    left: 1744px
+  &:nth-child(437)
+    animation-delay: 0.874s
+    left: 1748px
+  &:nth-child(438)
+    animation-delay: 0.876s
+    left: 1752px
+  &:nth-child(439)
+    animation-delay: 0.878s
+    left: 1756px
+  &:nth-child(440)
+    animation-delay: 0.88s
+    left: 1760px
+  &:nth-child(441)
+    animation-delay: 0.882s
+    left: 1764px
+  &:nth-child(442)
+    animation-delay: 0.884s
+    left: 1768px
+  &:nth-child(443)
+    animation-delay: 0.886s
+    left: 1772px
+  &:nth-child(444)
+    animation-delay: 0.888s
+    left: 1776px
+  &:nth-child(445)
+    animation-delay: 0.89s
+    left: 1780px
+  &:nth-child(446)
+    animation-delay: 0.892s
+    left: 1784px
+  &:nth-child(447)
+    animation-delay: 0.894s
+    left: 1788px
+  &:nth-child(448)
+    animation-delay: 0.896s
+    left: 1792px
+  &:nth-child(449)
+    animation-delay: 0.898s
+    left: 1796px
+  &:nth-child(450)
+    animation-delay: 0.9s
+    left: 1800px
+  &:nth-child(451)
+    animation-delay: 0.902s
+    left: 1804px
+  &:nth-child(452)
+    animation-delay: 0.904s
+    left: 1808px
+  &:nth-child(453)
+    animation-delay: 0.906s
+    left: 1812px
+  &:nth-child(454)
+    animation-delay: 0.908s
+    left: 1816px
+  &:nth-child(455)
+    animation-delay: 0.91s
+    left: 1820px
+  &:nth-child(456)
+    animation-delay: 0.912s
+    left: 1824px
+  &:nth-child(457)
+    animation-delay: 0.914s
+    left: 1828px
+  &:nth-child(458)
+    animation-delay: 0.916s
+    left: 1832px
+  &:nth-child(459)
+    animation-delay: 0.918s
+    left: 1836px
+  &:nth-child(460)
+    animation-delay: 0.92s
+    left: 1840px
+  &:nth-child(461)
+    animation-delay: 0.922s
+    left: 1844px
+  &:nth-child(462)
+    animation-delay: 0.924s
+    left: 1848px
+  &:nth-child(463)
+    animation-delay: 0.926s
+    left: 1852px
+  &:nth-child(464)
+    animation-delay: 0.928s
+    left: 1856px
+  &:nth-child(465)
+    animation-delay: 0.93s
+    left: 1860px
+  &:nth-child(466)
+    animation-delay: 0.932s
+    left: 1864px
+  &:nth-child(467)
+    animation-delay: 0.934s
+    left: 1868px
+  &:nth-child(468)
+    animation-delay: 0.936s
+    left: 1872px
+  &:nth-child(469)
+    animation-delay: 0.938s
+    left: 1876px
+  &:nth-child(470)
+    animation-delay: 0.94s
+    left: 1880px
+  &:nth-child(471)
+    animation-delay: 0.942s
+    left: 1884px
+  &:nth-child(472)
+    animation-delay: 0.944s
+    left: 1888px
+  &:nth-child(473)
+    animation-delay: 0.946s
+    left: 1892px
+  &:nth-child(474)
+    animation-delay: 0.948s
+    left: 1896px
+  &:nth-child(475)
+    animation-delay: 0.95s
+    left: 1900px
+  &:nth-child(476)
+    animation-delay: 0.952s
+    left: 1904px
+  &:nth-child(477)
+    animation-delay: 0.954s
+    left: 1908px
+  &:nth-child(478)
+    animation-delay: 0.956s
+    left: 1912px
+  &:nth-child(479)
+    animation-delay: 0.958s
+    left: 1916px
+  &:nth-child(480)
+    animation-delay: 0.96s
+    left: 1920px
+
+@-moz-keyframes wave
+  0%
+    transform: translateY(-10px)
+    height: 11px
+
+  100%
+    transform: translateY(-100px)
+    height: 100px
+
+
+@-webkit-keyframes wave
+  0%
+    transform: translateY(-10px)
+    height: 11px
+
+  100%
+    transform: translateY(-100px)
+    height: 100px
+
+
+@-o-keyframes wave
+  0%
+    transform: translateY(-10px)
+    height: 11px
+
+  100%
+    transform: translateY(-100px)
+    height: 100px
+
+
+@keyframes wave
+  0%
+    transform: translateY(-10px)
+    height: 11px
+
+  100%
+    transform: translateY(-100px)
+    height: 100px

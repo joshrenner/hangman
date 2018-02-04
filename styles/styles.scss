@@ -1,0 +1,16 @@
+@import "typography";
+@import "form";
+@import "entry";
+@import "game";
+@import "kitten";
+@import "waves";
+
+body {
+  background: #444;
+  overflow: hidden;
+}
+html,
+body,
+#container {
+  height: 100%;
+}
