@@ -5,22 +5,32 @@ button {
   display: block;
   box-sizing: border-box;
   padding: .5rem;
-  background: transparent;
+  background: #545454;
   vertical-align: middle;
   width: 100%;
   max-width: 100%;
-  border: 1px solid #cdcdcd;
-  border-radius: 4px;
+  border: 1px solid #6f6e6e;
+  border-radius: 3px;
   font-size: .95rem;
+  color: #212121;
+}
+[disabled] {
+  background: transparent;
+  cursor: not-allowed;
 }
 button {
   cursor: pointer;
-  background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 47%, rgba(237,237,237,1) 100%);
+  background: linear-gradient(to bottom, #9a9a9a 0%, #807f7f 64%, #585858 100%);
   &:hover {
-    background: linear-gradient(to top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 18%, rgba(237,237,237,1) 100%);
-  }
-  &[disabled] {
-    background: transparent;
-    cursor: not-allowed;
+    background: linear-gradient(to top, #7f7f7f 0%, #6f6e6e 64%, #696868 100%);
+    &[disabled] {
+      background: transparent !important;
+    }
   }
 }
+//::-webkit-input-placeholder,
+//::-moz-placeholder,
+//:-ms-input-placeholder,
+//:-moz-placeholder {
+//  color: #212121;
+//}

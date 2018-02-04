@@ -10,20 +10,30 @@ document.addEventListener('DOMContentLoaded', function() {
         guessButton: document.querySelector('#guess button'),
         entryInput: document.querySelector('#entry input'),
         entryButton: document.querySelector('#entry button'),
-        hintInput: document.querySelector('#entry textarea')
+        hintInput: document.querySelector('#entry textarea'),
+        message: document.getElementById('message')
     }
     let game,
-        kitten = new Kitty({min:0,max:6,dom:dom.kitten}),
+        kitten = new Kitty({min:0,max:6,dom:dom.kitten,message:message}),
         guessed = []
 
     function message (m) {
-        console.log(m)
+        dom.message.innerText = m;
     }
     function validateChar (ch) {
         return /^[A-Z]$/i.test(ch) && !guessed.includes(ch);
     }
     function validateWord (word) {
         return word.match(/^[A-Za-z]+$/);
+    }
+    function gameOver (didWin) {
+        if (didWin)
+            kitten.save()
+        else
+            kitten.kill()
+
+        dom.guessButton.setAttribute('disabled', 'disabled')
+        dom.guessInput.setAttribute('disabled', 'disabled')
     }
 
     dom.entryInput.onkeyup = function () {
@@ -54,6 +64,8 @@ document.addEventListener('DOMContentLoaded', function() {
             m.innerText = hint
             dom.word.appendChild(m)
         }
+
+        let count = game.length()
         dom.guessInput.onkeyup = function () {
             if (validateChar(dom.guessInput.value)) {
                 dom.guessButton.removeAttribute('disabled')
@@ -68,21 +80,27 @@ document.addEventListener('DOMContentLoaded', function() {
         dom.guessButton.onclick = function () {
             let x = dom.guessInput.value.toLowerCase()
             let i = game.guess(x)
+            let stillAlive = true;
             dom.guessInput.value = ''
             guessed.push(x)
             if (i.length===0) {
                 let r = dom.reject.innerText
                 r = (r.length > 0) ? r+=', '+x : x
                 dom.reject.innerText = r
-                kitten.minus()
+                stillAlive = kitten.minus()
             } else {
                 for (var d=0; d<i.length; d++) {
                     let n = document.querySelectorAll('#word span')[i[d]]
                     n.classList.remove('blank')
                     n.innerText = x
+                    count--
                 }
                 kitten.plus()
             }
+            if (!stillAlive)
+                gameOver(false)
+            if (count === 0)
+                gameOver(true)
             dom.guessInput.focus()
         }
     }

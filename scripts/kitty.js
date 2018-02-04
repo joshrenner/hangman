@@ -1,32 +1,32 @@
 function Kitty (args) {
-    let min = args.max || 6,
+    let self = this,
+        min = args.max || 6,
         max = args.min || 0,
         cur = args.start || max,
         dom = args.dom,
         message = args.message || console.log
 
-    function updateDom () {
-        dom.style.top = cur * 6 +'rem'
+    function updateDom (x) {
+        dom.style.top = x +'rem'
     }
-    function kill () {
-        message('u ded')
+    self.kill = function () {
+        updateDom(50)
+        message('You got the cat wet! :(')
     }
-    function health() {
-        message('u healthy, bro')
+    self.save = function () {
+        updateDom(-25)
+        message('You saved the cat! :)')
     }
 
-    this.minus = function () {
+    self.minus = function () {
         cur++
-        updateDom()
-        if (cur === min)
-            kill()
+        updateDom(cur*5)
+        return cur != min
     }
-    this.plus = function () {
+    self.plus = function () {
         cur--
-        updateDom()
-        if (cur === max)
-            health()
+        updateDom(cur*5)
     }
 
-    return this;
+    return self;
 }

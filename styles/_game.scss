@@ -12,17 +12,19 @@
 #word {
   grid-column: 1;
   grid-row: 1;
-  padding: 2em 0;
+  padding: 5em 0;
   span {
-    width: 1.15em;
+    width: 1.5em;
     height: 1.5em;
     display: inline-block;
-    margin-right: .4em;
+    margin-right: .5em;
     font-size: 2em;
     text-align: center;
     color: #fff;
+
     &.blank {
-      border-bottom: 1px solid #fff;
+      border: 2px solid #4a4949;
+      border-bottom: 2px solid #fff;
     }
   }
 }
@@ -32,9 +34,15 @@
   grid-row: 3;
   input,
   button {
+    text-align: center;
     display: inline;
-    width: 20%;
     margin-right: .5em;
+  }
+  button {
+    width: 10rem;
+  }
+  input {
+    width: 10rem;
   }
 }
 

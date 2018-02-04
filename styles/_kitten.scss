@@ -15,7 +15,7 @@ $total-swings: length($swings);
 }
 
 .all {
-    top: 0;
+    top: 3rem;
     left: calc(50% - 2.5rem);
     position: absolute;
     width: 5rem;
@@ -24,11 +24,11 @@ $total-swings: length($swings);
     animation: swing $duration $easing infinite both;
 
 &:before {
-     height: 20rem;
+     height: 52rem;
      width: 2px;
      background-color: $color-yarn;
      left: calc(50% - 1px);
-     bottom: 20rem;
+     bottom: 52rem;
  }
 }
 
